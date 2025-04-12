@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JBOY - 나만의 챗봇</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Jboy 🤖</h2>
+        <p>아래 잠들어있는 챗봇 깨우기↓↓ ㅁ▽ㅁ ↓↓</p>
+        <button class="jbot" id="jbotFn">ㅁoㅁ</button>
+
+        <!-- 말풍선 모달창 -->
+        <div class="chat-modal hidden">
+            <div class="chat-bubble">
+                <form id="chat-form">
+                    <label for="message">Jbot에게 말해보세요!</label><br />
+                    <input type="text" id="message" name="message" placeholder="메시지 입력..." required />
+                    <button type="submit">보내기</button>
+                </form>
+                <div id="chat-log"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- js 불러오기 -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

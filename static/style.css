@@ -1,0 +1,57 @@
+.hidden {
+    display: none;
+}
+.chat-container {
+    width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+
+/* 챗봇 */
+.jbot {
+    font-size: 24px;
+    padding: 3px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.jbot:hover {
+    font-weight: 600;
+}
+
+/* 말풍선 */
+.chat-bubble {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    width: 250px;
+}
+#chat-log {
+    margin-top: 15px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* 말풍선 - form */
+.user-msg, .bot-msg {
+    margin: 5px 0;
+}
+
+.user-msg {
+    text-align: right;
+    color: #0077cc;
+}
+
+.bot-msg {
+    text-align: left;
+    color: #28a745;
+}
